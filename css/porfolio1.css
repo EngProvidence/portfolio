@@ -1,0 +1,13 @@
+.nav-link:hover{
+   color:rgb(59, 59, 241) !important;
+  transition: 0.5s;
+  }
+  .nav-link{
+  font-size: larger !important;
+  }
+   html{
+      scroll-behavior: smooth;
+   }
+   .fa-brands{
+     font-size: 30px;
+   }

@@ -1,0 +1,168 @@
+body{
+
+	background-color:beige!important;
+}
+
+	/*------------------------------------------
+		#####################################
+		
+		*  about me section  *
+
+		################################
+		-------------------------------------*/
+    .sp{ font-weight: bold;
+    color: rgb(0,0,46); }
+    #about{ display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-top: 15px;
+     
+     }
+
+     #text{ border-radius: 10px;
+     	box-shadow: 2px 3px 5px 5px grey;
+     	padding: 20px;
+
+      }
+#about-img{border-radius: 20px;
+   box-shadow: 2px 3px 5px 5px grey;}
+.form-control{border-bottom: 2px solid blue!important;}
+/*------------------------------------------
+		#####################################
+		
+		*  about me section  *
+		ENDS HERE
+
+		################################
+		-------------------------------------*/
+
+
+
+/*------------------------------------------
+		#####################################
+		
+		*   contact section ends *
+		*   MEDIA QUERIES begins *
+
+		################################
+		-------------------------------------*/
+@media only screen and (max-width:650px){
+
+
+ #about{ display: grid;
+    grid-template-columns:1fr;
+    grid-gap: 10px;
+    width: 100%
+    margin-left:20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    font-size:larger; 
+     }
+
+#start{display: none}
+#sp{padding: 5px;
+margin-bottom: 15px;
+margin-left:40%;}
+
+}             
+@media screen and (min-width:651px) and (max-width:750px )
+{
+
+
+
+ #about{ display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 10px;
+    width: 100%;
+
+    margin-top: 5px;
+    
+     }
+#start{ font-size:18px;
+ }     
+
+}
+
+@media screen and (min-width:751px) and (max-width:999px )
+{
+
+ #about{ display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+   
+    margin-top: 7px; 
+     }
+
+
+}
+
+    .blend{
+     border-radius: 50%;
+     height: 150px;
+     width: 150px;
+     border: transparent;
+     border-top: 4px solid blue;
+     animation: ani 6s linear infinite;
+     position: absolute;
+     
+    z-index: 2;
+
+    }
+.blend::before {
+    content:'';
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: blue;
+    box-shadow: 0px 0px 0px 10px deepskyblue,
+                0px 0px 0px 20px skyblue;
+                
+
+}
+               
+
+}
+.blend:nth-child(1){
+    border-top: 4px solid green;
+    position: absolute;
+    z-index: 1;
+
+}
+.blend:nth-child(1)::before {
+background-color: green;
+    box-shadow: 0px 0px 0px 10px lime,
+                0px 0px 0px 20px palegreen;
+                
+
+}
+@keyframes ani {
+   0% {  transform:rotate( 0deg);}
+    100%{    transform:rotate(360deg);}
+
+    
+
+
+     } 
+
+.blend:nth-child(3){
+
+ top: 12.6px;
+
+}    
+#ani{
+ margin-top: 100px;
+ display:flex;
+ justify-content: center;
+ color: blue;
+ font-weight: bold;
+ font-size: larger;
+
+}   
+
